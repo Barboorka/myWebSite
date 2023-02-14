@@ -6,7 +6,45 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: antiquewhite;
+  background-color: rgb(218, 218, 217);
   font-family: "Montserrat", sans-serif;
+}
+
+.header__bcg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/header_big.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.header__bcg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100wh;
+  background-color: rgb(218, 218, 217);
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+.header__text {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: rgb(218, 218, 217);
+  text-shadow: 5px 2px 10px black;
+}
+.header__text h1 {
+  font-size: 4rem;
+}
+.header__text h3 {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
