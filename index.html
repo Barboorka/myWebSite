@@ -13,7 +13,7 @@
       name="description"
       content="Gabinet logopedyczny dla dzieci od 0 do 15 lat. Zapraszam do siebie rodziców i dzieci z Częstochowy i okolic."
     />
-    <link rel="shortcut icon" href="faviconka.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/faviconka.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,15 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav></nav>
+    <nav class="nav">
+      <div class="nav__items">
+        <a href="#contact" class="nav__item">Kontakt</a>
+        <a href="#articles" class="nav__item">Artykuły</a>
+        <a href="#teaching-aids" class="nav__item">Pomoce</a>
+        <a href="#prices" class="nav__item">Cennik</a>
+        <a href="#social-media" class="nav__item">Social media</a>
+      </div>
+    </nav>
 
     <header id="header" class="header">
       <div class="header__bcg">
@@ -32,15 +40,28 @@
           <h1>Barbara Dudzik - Latający Logopeda</h1>
           <h3>Gabinet logopedyczny dla dzieci i młodzieży</h3>
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </div>
     </header>
 
     <main>
-      
+      <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+      </section>
+
+      <section id="articles" class="articles"><h2>Artykuły</h2></section>
+
+      <section id="teaching-aids" class="teaching-aids">
+        <h2>Pomoce do zajęć</h2>
+      </section>
+
+      <section id="prices" class="prices"><h2>Cennik</h2></section>
+
+      <section id="social-media" class="social-media">
+        <h2>Social media</h2>
+      </section>
+      <footer></footer>
     </main>
-    <footer></footer>
+    <footer><p>&copy; 2023 Barbara Dudzik</p></footer>
   </body>
 </html>
