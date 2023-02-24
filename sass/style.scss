@@ -38,8 +38,38 @@ h2 {
   background-color: $light-color;
   z-index: 5;
 
+  .burger-btn {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    width: 28px;
+    z-index: 10;
+  }
+
+  .burger-btn:before,
+  .burger-btn:after,
+  .burger-btn div {
+    background: $accent-color;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .burger-btn:hover:before {
+    transform: translateY(10px) rotate(135deg);
+  }
+  .burger-btn:hover:after {
+    transform: translateY(-10px) rotate(-135deg);
+  }
+  .burger-btn:hover div {
+    transform: scale(0);
+  }
+
   &__items {
     margin-top: 20px;
+    display: none;
     a {
       position: relative;
       font-size: 1.4rem;
@@ -118,7 +148,31 @@ h2 {
 .contact {
   width: 100%;
   height: 100vh;
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 260px;
+    margin: 20px;
+    border: 2px solid $accent-color;
+    border-radius: 8px;
+    text-align: center;
+    .icon {
+      margin: 10px;
+      font-size: 30px;
+    }
+    .text {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+    }
+  }
 }
+
+
 
 // ARTICLES
 
@@ -183,6 +237,15 @@ footer::before {
   }
   .header__bcg {
     background-image: url("../img/header_big.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__items {
+    display: block;
+  }
+  .burger-btn {
+    display: none;
   }
 }
 
