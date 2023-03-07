@@ -213,7 +213,8 @@ h2 {
     background-color: $light-color;
     border: 3px solid $light-color;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    transition: transform .5s;
     &__title {
       text-align: center;
       margin: 5px;
@@ -242,6 +243,9 @@ h2 {
   }
 }
 
+.articles__box:hover {
+  transform: scale(1.1);
+}
 .article {
   padding: 8px;
   h1 {

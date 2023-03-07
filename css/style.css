@@ -188,7 +188,8 @@ h2 {
   background-color: rgb(218, 218, 217);
   border: 3px solid rgb(218, 218, 217);
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  transition: transform 0.5s;
 }
 .articles__box__title {
   text-align: center;
@@ -209,6 +210,10 @@ h2 {
 .articles h2 {
   color: rgb(218, 218, 217);
   padding-right: 20px;
+}
+
+.articles__box:hover {
+  transform: scale(1.1);
 }
 
 .article {
