@@ -211,9 +211,30 @@ h2 {
   padding-right: 20px;
 }
 
+.article {
+  padding: 8px;
+}
+.article h1 {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(51, 64, 118);
+  text-align: center;
+}
+.article h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.article p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+.article img {
+  width: 100%;
+}
+
 .teaching-aids {
   width: 100%;
-  height: 100vh;
 }
 
 .prices {
