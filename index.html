@@ -25,19 +25,51 @@
       src="https://kit.fontawesome.com/f679f6e189.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="burger-btn">
-        <div></div>
-      </div>
-      <div class="nav__items">
-        <a href="./index.html">Home</a>
-        <a href="#contact" class="nav__item">Kontakt</a>
-        <a href="#articles" class="nav__item">Artykuły</a>
-        <a href="#prices" class="nav__item">Cennik</a>
-        <a href="#social-media" class="nav__item">Social media</a>
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Latający Logopeda</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact"
+                >Kontakt</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#articles"
+                >Artykuły</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#prices">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#social-media"
+                >Social Media</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -79,62 +111,263 @@
 
       <section id="articles" class="articles">
         <h2>Artykuły</h2>
-        <div class="articles__box one">
-          <div class="articles__box__title"><a href="./blog/about_me.html">O mnie</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/Bogacka_Barbara Dudzik 16.jpg" alt="Logopedka z dziewczynką ćwiczące otwieranie ust"></div>
-          <div class="articles__box__text">
-            <p>Nazywam się Barbara Dudzik. Jestem logopedką, terapeutką ręki, trenerką grafomotoryki,...</p>
-            <p><a href="./blog/about_me.html">Czytaj dalej</a></p>
+        <div class="articles__boxes">
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/about_me.html">O mnie</a>
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/Bogacka_Barbara Dudzik 16.jpg"
+                alt="Logopedka z dziewczynką ćwiczące otwieranie ust"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                Nazywam się Barbara Dudzik. Jestem logopedką, terapeutką ręki,
+                trenerką grafomotoryki,...
+              </p>
+              <p><a href="./blog/about_me.html">Czytaj dalej</a></p>
+            </div>
           </div>
-        </div>
-        <div class="articles__box one">
-          <div class="articles__box__title"><a href="./blog/8_miejsc.html">8 miejsc, które warto odwiedzić z kilkulatkiem</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/zamek-m.jpg" alt="Zamek Neushwanstein"></div>
-          <div class="articles__box__text"><p>Zasób słownictwa dziecka rozszerza się wskutek poznawania
-        coraz to nowych miejsc, osób, przedmiotów.</p>
-            <p><a href="./blog/8_miejsc.html">Czytaj dalej</a></p>
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/8_miejsc.html"
+                >8 miejsc, które warto odwiedzić z kilkulatkiem</a
+              >
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/zamek-m.jpg"
+                alt="Zamek Neushwanstein"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                Zasób słownictwa dziecka rozszerza się wskutek poznawania coraz
+                to nowych miejsc, osób, przedmiotów.
+              </p>
+              <p><a href="./blog/8_miejsc.html">Czytaj dalej</a></p>
+            </div>
           </div>
-        </div>
-        <div class="articles__box one">
-          <div class="articles__box__title"><a href="./blog/rozwoj_mowy.html">Rozwój mowy dziecka</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/dziecko_m.jpg" alt="Uśmiechnięty noworodek"></div>
-          <div class="articles__box__text"><p>Kiedy przygotowywałam się do roli mamy,
-        czytałam od deski do deski wszystkie czasopisma, które...</p>
-            <p><a href="./blog/rozwoj_mowy.html">Czytaj dalej</a></p></div>
-        </div>
-        <div class="articles__box two">
-          <div class="articles__box__title"><a href="./blog/motoryka_duza.html">Ćwiczymy motorykę dużą zimą</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/zima_dzieci_m.jpg" alt="Dwoje radosnych dzieci leżących na śniegu"></div>
-          <div class="articles__box__text"><p>Na motorykę dużą składają się takie umiejętności, jak: chodzenie,
-        skakanie, kopanie, bieganie...</p>
-            <p><a href="./blog/motoryka_duza.html">Czytaj dalej</a></p></div>
-        </div>
-        <div class="articles__box two">
-          <div class="articles__box__title"><a href="./blog/pytania_na_poczatek.html">Pytania na początek terapii</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/pytanie_m.jpg" alt="Dwa kolorowe znaki zapytania na stosie szarych znaków"></div>
-          <div class="articles__box__text"><p>Terapia logopedyczna to zazwyczaj nowa sytuacja dla rodzica. Ma on w związku z tym wiele pytań...</p>
-            <p><a href="./blog/pytania_na_poczatek.html">Czytaj dalej</a></p></div>
-        </div>
-        <div class="articles__box two">
-          <div class="articles__box__title"><a href="./blog/zabawa_klockami.html">Pobawcie się ze mną... klockami</a></div>
-          <div class="articles__box__img"><img src="./blog/blog_img/klocki3_m.jpg" alt="Dwaj chłopcy bawiący się klockami"></div>
-          <div class="articles__box__text"><p>To będzie wpis inaugurujący cykl o zabawach i zabawkach, które wspierają rozwój mowy.</p>
-            <p><a href="./blog/zabawa_klockami.html">Czytaj dalej</a></p></div>
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/rozwoj_mowy.html">Rozwój mowy dziecka</a>
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/dziecko_m.jpg"
+                alt="Uśmiechnięty noworodek"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                Kiedy przygotowywałam się do roli mamy, czytałam od deski do
+                deski wszystkie czasopisma, które...
+              </p>
+              <p><a href="./blog/rozwoj_mowy.html">Czytaj dalej</a></p>
+            </div>
+          </div>
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/motoryka_duza.html"
+                >Ćwiczymy motorykę dużą zimą</a
+              >
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/zima_dzieci_m.jpg"
+                alt="Dwoje radosnych dzieci leżących na śniegu"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                Na motorykę dużą składają się takie umiejętności, jak:
+                chodzenie, skakanie, kopanie, bieganie...
+              </p>
+              <p><a href="./blog/motoryka_duza.html">Czytaj dalej</a></p>
+            </div>
+          </div>
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/pytania_na_poczatek.html"
+                >Pytania na początek terapii</a
+              >
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/pytanie_m.jpg"
+                alt="Dwa kolorowe znaki zapytania na stosie szarych znaków"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                Terapia logopedyczna to zazwyczaj nowa sytuacja dla rodzica. Ma
+                on w związku z tym wiele pytań...
+              </p>
+              <p><a href="./blog/pytania_na_poczatek.html">Czytaj dalej</a></p>
+            </div>
+          </div>
+          <div class="articles__box">
+            <div class="articles__box__title">
+              <a href="./blog/zabawa_klockami.html"
+                >Pobawcie się ze mną... klockami</a
+              >
+            </div>
+            <div class="articles__box__img">
+              <img
+                src="./blog/blog_img/klocki3_m.jpg"
+                alt="Dwaj chłopcy bawiący się klockami"
+              />
+            </div>
+            <div class="articles__box__text">
+              <p>
+                To będzie wpis inaugurujący cykl o zabawach i zabawkach, które
+                wspierają rozwój mowy.
+              </p>
+              <p><a href="./blog/zabawa_klockami.html">Czytaj dalej</a></p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- <section id="teaching-aids" class="teaching-aids">
-        <h2>Pomoce do zajęć</h2>
-      </section> -->
-
-      <section id="prices" class="prices"><h2>Cennik</h2></section>
+      <section id="prices" class="prices">
+        <h2>Cennik</h2>
+        <div class="prices__box">
+          <div class="prices__items">
+            <h3>Konsultacje</h3>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Noworodki i niemowlęta</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  Konsultacja <span>dla maluszków</span>, które mają problemy ze
+                  ssaniem, śpią z otwartą buzią lub istnieje podejrzenie
+                  skrócenia wędzidełka języka lub wargi górnej.
+                </p>
+                <p><span>Czas trwania:</span> ok. 2 godz.</p>
+                <p><span>Cena:</span> 250 zł</p>
+              </div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Konsultacja logopedyczna</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  Konsultacja
+                  <span
+                    >dla dzieci z podejrzeniem problemów z rozwojem mowy,</span
+                  >
+                  np.: brak mowy, mały zasób słów, mowa niewyraźna,
+                  zniekształcanie głosek, mowa międzyzębowa.
+                </p>
+                <p><span>Czas trwania:</span> ok. 1 godz.</p>
+                <p><span>Cena:</span> 150 zł</p>
+              </div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Terapia ręki</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  Konsultacja
+                  <span
+                    >dla dzieci, które mają problem z prawidłowym chwytem
+                    pisarskim,</span
+                  >
+                  nie lubią rysować, nie potrafią pracować przy stoliku,
+                </p>
+                <p><span>Czas trwania:</span> ok. 2 godz.</p>
+                <p><span>Cena:</span> 250zł</p>
+              </div>
+            </div>
+          </div>
+          <div class="prices__items">
+            <h3>Terapia</h3>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Pojedyncze zajęcia</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  <span>Koszt pojedynczych zajęć</span> w trakcie terapii
+                  logopedycznej. Zajęcia odwołujemy min. 24h przed rozpoczęciem.
+                  Późniejsze odwołanie skutkuje koniecznością uiszczenia 50%
+                  kwoty.
+                </p>
+                <p><span>Czas trwania:</span> 45 minut</p>
+                <p><span>Cena:</span> 120 zł</p>
+              </div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Pakiet 1</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  <span>Pakiet abonamentowy</span> bez możliwości odwołania
+                  zajęć do wykorzystania w ciągu 30 dni.
+                </p>
+                <p><span>Czas trwania:</span> 4 zajęcia x 45 minut</p>
+                <p><span>Cena:</span> 360 zł</p>
+              </div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item__bcg">
+                <h4>Pakiet 2</h4>
+              </div>
+              <div class="prices__item__text">
+                <p>
+                  <span>Pakiet abonamentowy</span> bez możliwości odwołania
+                  zajęć do wykorzystania w ciągu 90 dni.
+                </p>
+                <p>
+                  Istnieje możliwość przełożenia/odrobienia jednych zajęć
+                  (należy to uzgodnić z prowadzącym min. 48h przed zajęciami).
+                </p>
+                <p><span>Czas trwania:</span> 10 zajęć x 45 minut</p>
+                <p><span>Cena:</span> 850zł</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="social-media" class="social-media">
         <h2>Social media</h2>
-        
+        <div class="social-media__items">
+          <div class="social-media__item">
+            <div class="social-media__item__bcg">
+              <a href="http://facebook.com/latajacylogopeda"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+            <div class="social-media__item__text">
+              <h4>Latający Logopeda na FB</h4>
+            </div>
+          </div>
+          <div class="social-media__item">
+            <div class="social-media__item__bcg">
+              <a href="http://instagram.com/latajacy.logopeda"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+            <div class="social-media__item__text">
+              <h4>Latający Logopeda na IG</h4>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer></footer>
     </main>
     <footer><p>&copy; 2023 Barbara Dudzik</p></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
