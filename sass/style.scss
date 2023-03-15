@@ -34,6 +34,18 @@ nav a {
   text-transform: uppercase;
   font-weight: bold;
 }
+.navbar-brand {
+  color: $accent-color;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: $accent-color;
+}
+
+.navbar-toggler {
+  color: $accent-color;
+}
 
 // HEADER
 
@@ -104,8 +116,8 @@ nav a {
     text-align: center;
     overflow: hidden;
     .img {
-      width: 260px;
-      height: 200px;
+      width: 100%;
+      height: 75%;
       background-size: cover;
       background-position: center;
     }
@@ -296,12 +308,17 @@ nav a {
 .social-media {
   width: 100%;
   height: 100%;
-  background: rgb(51, 64, 118);
-  background: linear-gradient(
-    225deg,
-    rgba(51, 64, 118, 1) 4%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-color: $light-color;
+  // background: rgb(51, 64, 118);
+  // background: linear-gradient(
+  //   225deg,
+  //   rgba(51, 64, 118, 1) 4%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+
+  h2 {
+    color: $accent-color;
+  }
 
   &__items {
     display: flex;
@@ -353,6 +370,15 @@ footer {
       font-size: 2.4rem;
     }
   }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
   .header__text h1 {
     font-size: 2.6rem;
   }
@@ -384,6 +410,15 @@ footer {
       font-size: 2.8rem;
     }
   }
+
+  .navbar-brand {
+    font-size: 1.7rem;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
   .header__text h1 {
     font-size: 2.8rem;
   }
@@ -428,6 +463,9 @@ footer {
     font-size: 3.2rem;
   }
   .contact {
+    p {
+      font-size: 1.6rem;
+    }
     .cards {
       flex-direction: row;
       margin: 35px;
@@ -456,6 +494,27 @@ footer {
 
   h2 {
     font-size: 3.6rem;
+  }
+
+.navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+  }
+
+  .contact {
+    p {
+      font-size: 1.8rem;
+    }
+    .cards {
+      .card {
+        width: 350px;
+        height: 350px;
+        margin: 25px auto;
+      }
+    }
   }
 
   .articles {

@@ -30,6 +30,19 @@ nav a {
   font-weight: bold;
 }
 
+.navbar-brand {
+  color: rgb(51, 64, 118);
+}
+
+.nav-link {
+  font-weight: bold;
+  color: rgb(51, 64, 118);
+}
+
+.navbar-toggler {
+  color: rgb(51, 64, 118);
+}
+
 .header__bcg {
   position: relative;
   width: 100%;
@@ -92,8 +105,8 @@ nav a {
   overflow: hidden;
 }
 .contact .card .img {
-  width: 260px;
-  height: 200px;
+  width: 100%;
+  height: 75%;
   background-size: cover;
   background-position: center;
 }
@@ -252,8 +265,10 @@ nav a {
 .social-media {
   width: 100%;
   height: 100%;
-  background: rgb(51, 64, 118);
-  background: linear-gradient(225deg, rgb(51, 64, 118) 4%, rgb(255, 255, 255) 100%);
+  background-color: rgb(218, 218, 217);
+}
+.social-media h2 {
+  color: rgb(51, 64, 118);
 }
 .social-media__items {
   display: flex;
@@ -295,6 +310,12 @@ footer p {
   body h2 {
     font-size: 2.4rem;
   }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
   .header__text h1 {
     font-size: 2.6rem;
   }
@@ -317,6 +338,12 @@ footer p {
 @media (min-width: 768px) {
   body h2 {
     font-size: 2.8rem;
+  }
+  .navbar-brand {
+    font-size: 1.7rem;
+  }
+  .nav-link {
+    font-size: 1.4rem;
   }
   .header__text h1 {
     font-size: 2.8rem;
@@ -349,6 +376,9 @@ footer p {
   .header__text h1 {
     font-size: 3.2rem;
   }
+  .contact p {
+    font-size: 1.6rem;
+  }
   .contact .cards {
     flex-direction: row;
     margin: 35px;
@@ -369,6 +399,20 @@ footer p {
   }
   h2 {
     font-size: 3.6rem;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+  }
+  .contact p {
+    font-size: 1.8rem;
+  }
+  .contact .cards .card {
+    width: 350px;
+    height: 350px;
+    margin: 25px auto;
   }
   .articles .articles__boxes .articles__box {
     width: 330px;
